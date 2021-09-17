@@ -1,1 +1,24 @@
-<p>{{ title }}</p>
+<div class="container text-center mt-5">
+  <p><b>{{ title }}</b></p>
+  <p>The modules Champions League and Europa league will be loaded when they were activated. <br>
+    If the user don't need to use some of the modules, it won't be loaded.</p>
+
+  <nav class="mb-5">
+    <button type="button" class="btn btn-light btn-lg" routerLink="">Home</button>
+    <button type="button" class="btn btn-light btn-lg ml-3" routerLink="/champions">Champions League</button>
+    <button type="button" class="btn btn-light btn-lg ml-3" routerLink="/europa">Europa League</button>
+  </nav>
+
+  <router-outlet></router-outlet>
+</div>
+
+<div class="fixed-bottom text-center">
+  <div class="row">
+    <div class="col-md-4 offset-md-4">
+      <p>For more information, see network configurations in your browser.</p>
+    </div>
+    <div class="col-md-2 offset-md-2">
+      <p><a href="https://github.com/gusvagner">Gustavo Vagner</a></p>
+    </div>
+  </div>
+</div>
